@@ -34,10 +34,10 @@ TIME() {
 # 软件菜单位置调整命令:sed -i 's/\"现处菜单\"/\"拟处菜单\"/g' luci文件下载目标编译工作区路径/luci-app-名称/luasrc/controller/luci名称.lua(action step Download Package查看路径)
 # 菜单名称:参考浏览器位置栏内名称,以.lua .htm文件中entry后面的菜单栏位置名称为准
 #----------------------------------------------------------------------------------------------------------------------------------
-echo
-TIME b "cus_script/adjust_menu_position.sh开始调整插件菜单位置:"
-TIME b "调整 cpufreq 到 system菜单"
-sed -i 's/\"services\"/\"system\"/g' feeds/luci/applications/luci-app-cpufreq/luasrc/controller/cpufreq.lua
+#echo
+#TIME b "cus_script/adjust_menu_position.sh开始调整插件菜单位置:"
+#TIME b "调整 cpufreq 到 system菜单"
+#sed -i 's/\"services\"/\"system\"/g' feeds/luci/applications/luci-app-cpufreq/luasrc/controller/cpufreq.lua
 #TIME b "调整 文件助手 到 NAS菜单"
 #sed -i 's/\"services\"/\"NAS\"/g' package/third-party-feed/luci-app-fileassistant/luasrc/controller/fileassistant.lua
 #curl -fsSL https://raw.githubusercontent.com/gd0772/patch/main/mwan3helper_status.htm > ./package/lean/luci-app-mwan3helper/luasrc/view/mwan3helper/mwan3helper_status.htm
