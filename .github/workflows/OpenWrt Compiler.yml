@@ -251,7 +251,7 @@ jobs:
       with:
         name: ${{ env.CODE }}-${{ env.TARGET_PROFILE }}
         tag: ${{ steps.tag.outputs.release_tag }}
-        token: ${{ secrets.REPO_TOKEN }}
+       
         bodyFile: "update_log.txt"
         artifacts: "${{ env.FIRMWARE }}/*"   
 
